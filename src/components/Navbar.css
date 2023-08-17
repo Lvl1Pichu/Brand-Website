@@ -1,0 +1,55 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; /* Background color for the entire navbar */
+    color: white; /* Text color for buttons and links */
+    height: 46px; /* Set the navbar height */
+    padding: 0 20px; /* Remove top margin and adjust horizontal padding */
+  }
+  
+  .navbar-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10%; /* Rounded corners */
+    transition: background-color 0.3s;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .navbar-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .navbar-right {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-signup,
+  .navbar-signin {
+    background-color: transparent;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10%; /* Rounded corners */
+    transition: background-color 0.3s;
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .navbar-signup:hover,
+  .navbar-signin:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  

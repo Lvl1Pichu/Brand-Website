@@ -1,0 +1,79 @@
+/* Existing styles */
+.slider-container {
+    display: flex;
+    width: 100%;
+    padding-top: 6em;
+}
+
+.slider-image {
+    width: 70%;
+    background-size: cover;
+    background-position: center;
+    height: 544px;
+    border-radius: 3%;
+}
+
+.slider-content {
+    width: 30%;
+    background-color: green;
+    height: 544px;
+    border-radius: 3%;
+    margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+      flex-direction: column;
+    }
+  
+    .slider-image,
+    .slider-content {
+      flex: 100%;
+      margin: 0;
+    }
+}
+
+/* New styles */
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.object-top {
+    object-position: top;
+}
+
+.object-cover {
+    object-fit: cover;
+}
+
+.inset-0 {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.md\:relative {
+    position: relative;
+}
+
+.object-center {
+    object-position: center;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio, canvas, embed, iframe, img, object, svg, video {
+    display: block;
+}

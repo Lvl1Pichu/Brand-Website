@@ -1,26 +1,32 @@
 import React from 'react';
-import teamworkImage from '../assets/Teamwork.jpg'; // Import the image
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart } from '@fortawesome/free-solid-svg-icons';
 import './SliderComponent.css';
+import TuningKeyboard from '../assets/Tuningforkkeyboard.png';
 
-const ReverseSliderComponent: React.FC = () => {
+const SliderComponent: React.FC = () => {
   return (
     <div className="slider-container">
-      <div className="slider-image" style={{ backgroundImage: `url(${teamworkImage})` }}>
+      <div className="slider-left" style={{ backgroundImage: `url(${TuningKeyboard})` }}>
         {/* Content for the image section */}
       </div>
-      <div className='slider-content'>
-        <video 
-          autoPlay 
-          playsInline 
-          loop 
-          preload="metadata"
-        >
-          <source src="https://player.vimeo.com/progressive_redirect/playback/832225661/rendition/1080p/file.mp4?loc=external&amp;oauth2_token_id=1505220741&amp;signature=f3d9fe4bf29d7658ed53ee94214c2c5c6ba0cfc06722b8a558a69cbe8f871794" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <div className="slider-right">
+        <h2>COMMUNITY</h2>
+        <ul>
+          <h6>Latest discussions</h6>
+          {['I want Resonant to win Champs', 'Photos of my resonant tote', 'BOASTER WHEN WILL YOU ACE!', 'Lower Bracket Kings', 'Road to worlds', 'Is there any hope to get to finals?', 'When is your next game?'].map((item, index) => (
+            <li key={index}>
+              {item}
+              <span className="like-counter">
+                <FontAwesomeIcon icon={faHeart} />
+                <span className="like-number">{Math.floor(Math.random() * 100)}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
 };
 
-export default ReverseSliderComponent;
+export default SliderComponent;

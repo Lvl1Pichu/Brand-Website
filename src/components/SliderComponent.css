@@ -1,24 +1,85 @@
-/* Existing styles */
 .slider-container {
     display: flex;
     width: 100%;
     padding-top: 6em;
 }
 
-.slider-image {
-    width: 70%;
-    background-size: cover;
-    background-position: center;
+.slider-left,
+.slider-right {
     height: 544px;
+    overflow: hidden; 
     border-radius: 3%;
 }
 
-.slider-content {
+.slider-left {
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slider-right {
     width: 30%;
-    background-color: green;
     height: 544px;
     border-radius: 3%;
     margin-left: 15px;
+    background: linear-gradient(to bottom, #F15B22, black 50%, black);
+    color: white; 
+    padding: 20px;
+}
+
+.slider-right h2,
+.slider-right h6 {
+    background-color: transparent;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.slider-right h6 {
+    color: #555;  /* Darker tint of gray */
+    font-size: 1.5em;
+    margin-bottom: 30px;  /* Increased gap between "Latest discussions" and li items */
+}
+
+.slider-right ul {
+    list-style-type: none; 
+    padding: 0;
+    background-color: transparent;
+    margin-top: 20px;  
+}
+
+.slider-right li {
+    margin-bottom: 30px;  
+    position: relative;
+    padding-right: 40px; 
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.slider-right .like-counter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+.slider-right .fa-heart {
+    background-color: transparent;
+}
+
+.slider-right .like-number {
+    display: block;
+    background-color: transparent;
+}
+
+.slider-left img,
+.slider-right img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -26,54 +87,9 @@
       flex-direction: column;
     }
   
-    .slider-image,
-    .slider-content {
-      flex: 100%;
-      margin: 0;
+    .slider-left,
+    .slider-right {
+      width: 100%;
+      margin: 10px 0;
     }
-}
-
-/* New styles */
-.w-full {
-    width: 100%;
-}
-
-.h-full {
-    height: 100%;
-}
-
-.object-top {
-    object-position: top;
-}
-
-.object-cover {
-    object-fit: cover;
-}
-
-.inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.md\:relative {
-    position: relative;
-}
-
-.object-center {
-    object-position: center;
-}
-
-img, video {
-    max-width: 100%;
-    height: auto;
-}
-
-audio, canvas, embed, iframe, img, object, svg, video {
-    display: block;
 }

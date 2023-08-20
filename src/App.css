@@ -1,6 +1,10 @@
 * {
+  margin: 0;
   background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300; /* This sets the default font-weight to the lighter 300 */
 }
+
 
 .container{
   max-width: 1536px;

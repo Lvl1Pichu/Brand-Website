@@ -25,7 +25,7 @@
     margin-left: 15px;
     background: linear-gradient(to bottom, #F15B22, black 50%, black);
     color: white; 
-    padding: 20px;
+    padding: 10px;
 }
 
 .slider-right h2,
@@ -59,7 +59,7 @@
 
 .slider-right .like-counter {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
     text-align: center;
     background-color: transparent;

@@ -7,6 +7,13 @@ const BottomSliderComponent: React.FC = () => {
       <div className="bottom-slider-container">
         <div className="bottom-slider-image">
           <img src={teamworkImage} alt="Teamwork" />
+          <div className="image-content">
+            <h1>Contact</h1>
+            <p>Resonant@partnership.com</p>
+            <p>Resonant@support.com</p>
+            <p>Resonant@gaming.com</p>
+            <p>Resonant@media.com</p>
+          </div>
         </div>
         <div className='bottom-slider-video-container'>
           <video className='bottom-slider-video'
@@ -22,6 +29,6 @@ const BottomSliderComponent: React.FC = () => {
         </div>
       </div>
     );
-  };
+};
 
 export default BottomSliderComponent;

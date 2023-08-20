@@ -12,6 +12,7 @@
 }
 
 .bottom-slider-image {
+    position: relative; /* For absolute positioning of the content */
     width: 30%;
 }
 
@@ -20,6 +21,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.image-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: transparent;
+}
+
+.image-content h1, .image-content p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    margin: 10px 0;
+}
+
+.image-content p {
+    font-weight: 300;
 }
 
 .bottom-slider-video-container {
